@@ -30,7 +30,7 @@ form{
 /* Home */
 
 html.home{
-	background: url(/assets/home/hero.jpg) left top no-repeat;
+	background: url(images/home/hero.jpg) left top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	
