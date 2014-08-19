@@ -30,7 +30,7 @@ form{
 /* Home */
 
 html.home{
-	background: url(/assets/home/hero.jpg) left top no-repeat;
+	background: url('http://static.squarespace.com/static/53d52d93e4b02158d29cb9c1/t/53d5e62ce4b0125510c2932c/1406527020294/East-pitDigginsBW-1.jpg') left top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	
