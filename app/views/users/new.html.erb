@@ -13,6 +13,8 @@
         <div class="key"></div>
         <p class="byline brandon">Be the first to know</p>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <%= f.text_field :first_name, :placeholder => "First name", :class => "email brandon" %>
+            <%= f.text_field :last_name, :placeholder => "Last name", :class => "email brandon" %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
             <%= f.submit "Step Inside" , :class=> "submit brandon" %>
         <% end %>
