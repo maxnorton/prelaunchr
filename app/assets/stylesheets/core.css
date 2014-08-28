@@ -30,29 +30,20 @@ form{
 /* Home */
 
 html.home{
-	background: url('http://static.squarespace.com/static/53d52d93e4b02158d29cb9c1/t/53d5e62ce4b0125510c2932c/1406527020294/East-pitDigginsBW-1.jpg') left top no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+	background: url(/assets/home/chair.jpg) left top no-repeat;
+	background-size: cover;	
 }
 
 #home{
 	padding-bottom: 50px;
+	font-family:Arial, Helvetica, sans-serif;
+	min-height:800px;
+	position:relative;
 }
 
 #home .page-content{
 	width: 1400px;
 	margin: 0 auto;
-}
-
-.ew-logo {
-	background-image:url('http://static.squarespace.com/static/53d52d93e4b02158d29cb9c1/t/53d5e046e4b02e9f4fd619fc/1408230733287/?format=1500w');
-	background-size: 427px 140px;
-	background-position:center center;
-	width:427px;
-	height:140px;
-	margin:2em auto;
-	text-indent: -9999px;
 }
 
 #home .hero{
@@ -62,6 +53,13 @@ html.home{
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
+	min-height:500px;
+}
+
+#home .hero h2 {
+	position:relative;
+	top:200px;
+	font-size:1.5em;
 }
 
 #home .hero .small{
@@ -78,10 +76,42 @@ html.home{
 	letter-spacing: 1px;
 }
 
+main {
+	position:absolute;
+	width:100%;
+	height:229px;
+	bottom:0;
+	left:0;
+	background-color:white;
+	font-size:18px;
+}
+
+.ew-logo {
+	float:left;
+	background-image:url(/assets/home/erickson-woodworking-logo.png);
+	background-size: 350px 115px;
+	background-position:center center;
+	width:350px;
+	height:115px;
+	margin:2em 1%;
+	text-indent: -9999px;
+}
+
+.description {
+	width:300px;
+	margin:2em auto;
+	text-align:center;
+	line-height:1.6em;
+}
+
+.form-wrap {
+	float:right;
+}
+
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
-	margin: 23px auto 0;
+	width: 30%;
+	margin: 23px 1%;
 }
 
 #home .form-wrap .key{
@@ -93,17 +123,17 @@ html.home{
 }
 
 #home .form-wrap .byline{
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #074E6F;
 	text-align: center;
-	font-weight: bold;
 	letter-spacing: 2px;
 	margin: 15px 0;
 }
 
+#home .form-wrap form {
+	width:274px;
+	margin:0 auto;
+	text-align:center;
+}
 #home .form-wrap .email{
-	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
 	border: 1px solid #074E6F;
@@ -113,15 +143,15 @@ html.home{
 }
 
 #home .form-wrap .submit{
-	width: 143px;
-	background: #074E6F;
-	float: left;
+	cursor:pointer;
+	width:143px;
+	margin:3px auto;
+	background: white;
 	height: 37px;
 	line-height: 37px;
-	color: #FFF;
 	font-size: 13px;
-	text-transform: uppercase;
-	border: 0;
+	text-transform: lowercase;
+	border: 1px solid black;
 	letter-spacing: 2px;
 }
 
@@ -250,7 +280,7 @@ html.home{
 }
 
 .adelle {
-	color:white;
+	color:black;
 	font-size:21px;
 }
 
