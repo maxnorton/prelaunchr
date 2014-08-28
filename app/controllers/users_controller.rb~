@@ -14,8 +14,12 @@ class UsersController < ApplicationController
 
     def create
         # Get user to see if they have already signed up
+<<<<<<< HEAD
+        @user = User.find_by_email(params[:user][:email])
+=======
         @user = User.find_by_email(params[:user][:email]);
             debugger
+>>>>>>> 76e87f9f28142fa2a24529c02fc8d363395ebf6e
         # If user doesnt exist, make them, and attach referrer
         if @user.nil?
 
