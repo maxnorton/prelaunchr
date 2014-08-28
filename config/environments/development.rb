@@ -48,10 +48,11 @@ Prelaunchr::Application.configure do
   #  config.action_mailer.smtp_settings = { :address=> 'localhost', :port=>1025 }
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
-    :port                 => 587,
+    :port                 => 465,
     :domain               => 'gmail.com',
-    :user_name            => 'developer.cipher',
-    :password             => 'developercipher1',
+    :user_name            => 'info@ericksonwoodworking.com',
+    :password             => 'tonsofguns',
     :authentication       => 'plain',
-    :enable_starttls_auto => true  }
+    :tls => true,
+    :enable_starttls_auto => true  } 
 end
