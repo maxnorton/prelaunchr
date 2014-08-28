@@ -34,7 +34,7 @@ html.home{
 	background-size: cover;	
 }
 
-#home{
+body{
 	padding-bottom: 50px;
 	font-family:Arial, Helvetica, sans-serif;
 	min-height:800px;
@@ -46,7 +46,7 @@ html.home{
 	margin: 0 auto;
 }
 
-#home .hero{
+.hero{
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
@@ -97,21 +97,30 @@ main {
 	text-indent: -9999px;
 }
 
-.description {
+#home .description {
 	width:300px;
 	margin:2em auto;
 	text-align:center;
 	line-height:1.6em;
 }
 
-.form-wrap {
+.form-wrap, .referral-count {
 	float:right;
 }
 
-#home .form-wrap{
+#home .form-wrap, #refer .referral-count {
 	height: 80px;
 	width: 30%;
 	margin: 23px 1%;
+}
+
+.referral-count {
+	text-align:center;
+}
+
+.avg-count {
+	font-size:.8em;
+	margin-top:1em;
 }
 
 #home .form-wrap .key{
@@ -288,6 +297,13 @@ main {
 	background: #FFF;
 }
 
+#refer .hero h2 {
+	position:relative;
+	top:50px;
+	font-size:1.5em;
+	color:white;
+}
+
 #refer .page-content{
 	width: 1120px;
 	margin: 0 auto;
@@ -335,19 +351,9 @@ main {
 }
 
 #refer .hero{
-	background: #F1F0EE;
-	height: 391px;
+	background: url(/assets/refer/robert-and-tor-erickson.jpg) 0 0 no-repeat;
 	overflow: hidden;
-}
-
-#refer .mammoth{
-	width: 612px;
-	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
-	overflow: hidden;
-	margin-top: 15px;
-	float: left;
+	min-height:800px;
 }
 
 #refer .mammoth .need{
@@ -396,46 +402,58 @@ main {
 	margin-top: 15px;
 }
 
-#refer .share-wrap .copy-link{
-	border: 1px solid #D1D0C7;
+#refer .description {
+	width:450px;
+	font-size:.9em;
+	margin:2em auto;
+	text-align:center;
+	line-height:1.6em;
+}
+
+#refer .copy-link{
+	border: 1px solid black;
 	background: #FFF;
-	padding: 10px 0;
-	width: 320px;
+	padding: 10px 5px;
 	text-transform: none;
 	font-size: 11px;
 	margin: 20px auto 0;
 }
 
-#refer .share-wrap .social-links{
+#refer .social-links{
 	width: 120px;
 	height: 37px;
 	margin: 25px auto 0;
 	text-align: center;
 }
 
-#refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
+#refer .social-links a, #refer .social-links div{
 	display: inline-block;
 }
 
-#refer .share-wrap .social-links .fb{
+#refer .social-links .fb{
 	background: url(/assets/refer/fb.png);
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
 }
 
-#refer .share-wrap .social-links .twit{
+#refer .social-links .twit{
 	background: url(/assets/refer/twit.png);
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
 }
 
-#refer .share-wrap .social-links .sep{
+#refer .social-links .sep{
 	height: 28px;
 	width: 1px;
 	background: #BAB9BA;
 	margin: 0 20px;
+	display:inline-block;
+}
+
+#refer .count {
+	font-size:3em;
 }
 
 #refer .prizes{
