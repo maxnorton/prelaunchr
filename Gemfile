@@ -14,8 +14,10 @@ gem 'uglifier', '>= 2.5.3'
 group :development do
   gem 'pry'
   gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
+  gem 'byebug'
 end
 
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 gem 'delayed_job_active_record', '~> 4.0.1'
 
 gem 'unicorn', '~> 4.8.3'

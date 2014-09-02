@@ -5,7 +5,7 @@ Thanks for signing up at Erickson Woodworking!
 Keep checking back in to see how many referrals you have generated at <%= link_to "Erickson Woodworking" , "#{@host}?ref=#{@user.referral_code}" %>.
 
 <br/><br/>
-Also, spread the word more by following us on <a href="https://www.facebook.com/pages/Erickson-Woodworking/110008722409104">Facebook</a>, <a href="https://twitter.com/ericksonww">Twitter</a>, <a href="http://www.pinterest.com/erickson_ww/">Pinterest</a>, <a href="http://instagram.com/ericksonwoodworking">Instagram</a>, and <a href="http://ericksonwoodworking.tumblr.com">Tumblr!</a>
+Also, spread the word more by following us on <a href="https://www.facebook.com/pages/Erickson-Woodworking/110008722409104">Facebook</a>, <a href="https://twitter.com/ericksonww">Twitter</a>, <a href="http://www.pinterest.com/erickson_ww/">Pinterest</a>, <a href="http://instagram.com/ericksonwoodworking">Instagram</a>, and Tumblr!(Not provided)
 
 <!--
 

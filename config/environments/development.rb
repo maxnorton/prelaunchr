@@ -1,9 +1,9 @@
 silence_warnings do
-    begin
-        require 'pry'
-        IRB = Pry
-    rescue LoadError
-    end
+  begin
+    require 'pry'
+    IRB = Pry
+  rescue LoadError
+  end
 end
 
 Prelaunchr::Application.configure do
@@ -24,7 +24,7 @@ Prelaunchr::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -40,6 +40,19 @@ Prelaunchr::Application.configure do
 
 
   # For mailer configs
-  config.action_mailer.perform_deliveries = false
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+  #  config.action_mailer.smtp_settings = { :address=> 'localhost', :port=>1025 }
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 465,
+    :domain               => 'gmail.com',
+    :user_name            => 'info@ericksonwoodworking.com',
+    :password             => 'tonsofguns',
+    :authentication       => 'plain',
+    :tls => true,
+    :enable_starttls_auto => true  } 
 end
