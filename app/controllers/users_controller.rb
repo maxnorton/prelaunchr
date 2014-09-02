@@ -51,8 +51,7 @@ class UsersController < ApplicationController
         @user.referrer = @referred_by
       end
 
-      host = request.protocol+request.host_with_port
-      @user.save ? UserMailer.signup_email(@user,host).deliver :  message =  @user.errors.full_messages.join("<br/>").html_safe
+      @user.save ? UserMailer.signup_email(@user).deliver :  message =  @user.errors.full_messages.join("<br/>").html_safe
     end
     # Send them over refer action
     respond_to do |format|
