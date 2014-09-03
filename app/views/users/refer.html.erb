@@ -1,12 +1,14 @@
 <div class="hero">
     <h2>From Robert and Tor, thank you.</h2>
+    <!-- Sticky footer method by ryanfait.com -->
+    <div class="push"></div>
 </div>
 
 <main role="main">
     <h1 class="adelle ew-logo">Erickson Woodworking</h1>
 
     <% 
-        referrals_count = @user.referrals.count
+        referrals_count = @user.referrals.count + 1
 
         stops = User::REFERRAL_STEPS
 
@@ -23,9 +25,9 @@
      %>
     <div class="referral-count">
         <h3 class="count"><%= referrals_count %></h3>
-        <p>Your total entries/referrals<br />
+        <p>Your total entries (you plus your referrals)<br />
             Keep checking</p>
-        <p class="avg-count">Average number of referrals: <%= get_referrer_count %>/<%= get_all_user_count %></p>
+        <p class="avg-count">Average number of entries per visitor: <%= get_referral_avg %></p>
     </div>
     
     <p class="description">
