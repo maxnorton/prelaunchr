@@ -7,5 +7,6 @@ module ApplicationHelper
   end
   def get_referral_avg
   	avg = (get_referrer_count.to_f + get_all_user_count.to_f) / get_all_user_count.to_f
+  	avg.round(1)
   end
 end
