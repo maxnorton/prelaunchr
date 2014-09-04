@@ -34,9 +34,9 @@
         <span style="display:block; margin-bottom:1em;">Now spread the word.</span>
         <span style="display:block; margin-bottom:1em;">For each friend you refer, the greater your chance of winning the chair. Share your unique link via email or your favorite social media site, and be entered in the drawing again for every referral you generate.</span>
         <span class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></span>
-        <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+        <% twitter_message = "Soon I could be sitting in The Atlantic Monthly’s \"nexus of art and ergonomics\" thanks to @ericksonww:" %>
         <span class="social-links" style="display:block;">
-            <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+            <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>" class="fb" target="_blank"></a>
             <span class="sep"></span>
             <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
         </span>
