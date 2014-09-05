@@ -491,6 +491,7 @@ main {
 #refer .chair-photos {
 	width:96%;
 	margin:0px auto;
+	clear: both;
 }
 
 #refer .chair-photos img {
