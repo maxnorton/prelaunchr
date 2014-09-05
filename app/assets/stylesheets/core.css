@@ -30,8 +30,6 @@ form{
 /* Home */
 
 html.home{
-	background: url(/assets/home/chair.jpg) left top no-repeat;
-	background-size: cover;	
 }
 
 body{
@@ -55,10 +53,37 @@ body{
 	min-height:500px;
 }
 
+#home .hero .triptych-1, #home .hero .triptych-2 {
+	height: 100%;
+	width:49.75%;
+	position:absolute;
+}
+
+#home .hero .triptych-1 {
+	background: url(/assets/home/robert-and-tor-erickson-discussing-table_1452px.jpg) no-repeat center bottom;
+}
+
+#home .hero .triptych-2 {
+	background: url(/assets/home/tor-erickson-hands-slats_1452px.jpg) no-repeat center bottom;
+	right:0;
+}
+
 #home .hero h2 {
-	position:relative;
-	top:200px;
-	font-size:1.5em;
+	position:absolute;
+	text-align:left;
+	font-size:1.8em;
+	color:white;
+}
+
+h2.line1 {
+	top:50px;
+	left:50px;
+}
+
+h2.line2 {
+	bottom:367px;
+	left:75%;
+	margin-left:-43px;
 }
 
 #home .hero .small{
