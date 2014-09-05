@@ -806,7 +806,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 /* responsive adjustments */
 
- @media (max-width:1100px) {
+ @media (max-width:68em) {
  	.ew-logo {
  		width:100%;
  		padding:0;
@@ -843,7 +843,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	display:none;
 }
 
-@media (max-width:680px) {
+@media (max-width:40em) {
 	.hero {
 		margin-top:180px;
 	}
