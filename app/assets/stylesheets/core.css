@@ -439,7 +439,9 @@ main {
 	padding: 10px 5px;
 	text-transform: none;
 	font-size: 11px;
-	margin: 20px auto 0;
+	margin: 5px auto 0;
+	text-align:center;
+	min-width:50%;
 	max-width:100%;
 	overflow:hidden;
 }
@@ -447,7 +449,7 @@ main {
 #refer .social-links{
 	width: 181px;
 	height: 37px;
-	margin: 25px auto 0;
+	margin: 5px auto 0;
 	text-align: center;
 }
 

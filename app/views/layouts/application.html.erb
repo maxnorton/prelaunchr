@@ -34,7 +34,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
     $("input[type='text']").click(function () {
-      $(this).select();
+      this.setSelectionRange(0, $(this).attr('value').length);
     });
   });
   </script>
