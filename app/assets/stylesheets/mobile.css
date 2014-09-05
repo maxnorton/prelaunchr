@@ -1,6 +1,25 @@
+/* elements to exclude except on mobile */
+
+.small-mobile-only {
+	display:none;
+}
+
+.bg-alt-cover {
+	display:none;
+}
+
 /* responsive adjustments */
 
  @media screen and (max-width:68em) {
+
+ 	.bg-alt-cover {
+ 		display:block;
+ 		position:absolute;
+ 		top:0;
+ 		left:0;
+ 		min-width:100%;
+ 		min-height:100%;
+ 	}
  	.ew-logo {
  		width:100%;
  		padding:0;
@@ -32,10 +51,6 @@
  		margin-bottom:25px;
  	}
  }
-
-.small-mobile-only {
-	display:none;
-}
 
 @media screen and (max-width:40em) {
 	.hero {
