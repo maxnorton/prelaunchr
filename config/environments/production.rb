@@ -80,4 +80,6 @@ Prelaunchr::Application.configure do
     :authentication       => 'plain',
     :tls => true,
     :enable_starttls_auto => true  } 
+
+ENV["DATABASE_URL"] = "postgres://u7j204ntq4q3i8:p46hdbnghekfho67n5oqp2jvm5a@ec2-54-83-49-201.compute-1.amazonaws.com:5482/dftllr1bbammt9"
 end
