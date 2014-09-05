@@ -429,6 +429,7 @@ main {
 	padding:2em 0;
 	text-align:center;
 	line-height:1.6em;
+	position:relative;
 }
 
 #refer .copy-link{
@@ -438,6 +439,8 @@ main {
 	text-transform: none;
 	font-size: 11px;
 	margin: 20px auto 0;
+	max-width:100%;
+	overflow:hidden;
 }
 
 #refer .social-links{

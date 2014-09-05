@@ -11,14 +11,6 @@
 /* responsive adjustments */
 
  @media screen and (max-width:68em) {
-
- 	.bg-alt-cover {
- 		display:block;
- 		position:absolute;
- 		top:0;
- 		left:0;
- 		width:100%;
- 	}
  	.ew-logo {
  		width:100%;
  		padding:0;
@@ -28,53 +20,90 @@
  	}
  	.description-wrap {
 		display:block;
-		width:100%; 		
+		width:50%;
+		float:left; 
+		position:relative;
+		top:-200px;		
  	}
  	#home .description, #refer .description, #refer .social-links {
  		width:250px;
  		text-align: left;
  	}
- 	#home .form-wrap, #refer .referral-count, #refer .chair-photos {
- 		float:none;
- 		width:100%;
+ 	#home .form-wrap, #refer .referral-count {
+ 		float:right;
+ 		width:49%;
  		position:relative;
- 		top:350px;
  		margin-bottom:50px;
  		margin-left:0;
  	}
- 	#home .form-wrap {
- 		top:350px;
- 	}
  	#refer .referral-count, #refer .chair-photos {
- 		top:400px;
  		margin-bottom:25px;
+ 	}
+ 	#refer .chair-photos {
+ 		text-align: center;
+ 		position:relative;
+ 		top:-150px;
  	}
  }
 
 @media screen and (max-width:40em) {
+ 	
+ 	.bg-alt-cover {
+ 		display:block;
+ 		position:absolute;
+ 		top:0;
+ 		left:0;
+ 		width:100%;
+ 	}
 	.hero {
 		margin-top:180px;
+		background:transparent !important;
+	}
+	#refer .hero h2 {
+		color:black !important;
+		position:relative;
+		top:275px;
 	}
 	.ew-logo {
 		position:relative;
 		top:-685px;
 	}
-	.description-wrap {
-		position:relative;
-		top:-150px;
+	#home .description-wrap {
+		width:100%;
+		float:none;
+		top:-450px;
 	}
+	#refer .description-wrap {
+		width:100%;
+		margin:0 auto;
+		top:-350px;
+	}
+	#refer .description, #refer .social-links {
+		text-align:center;
+		width:100%;
+	}
+	#refer .desc-left {
+		text-align:left !important;
+		padding-left:1em;
+		padding-right:1em;
+	}
+ 	#home .form-wrap, #refer .referral-count, #refer .chair-photos {
+ 		float:none;
+ 		width:100%;
+ 		top:350px;
+ 	}
 	#home .form-wrap {
-		top:200px;
+		top:-100px;
 	}
 	#refer .referral-count {
-		top:250px;
+		top:40px;
 	}
 	#refer .chair-photos {
-		text-align: center;
-		top:150px;
+		top:0;
 	}
-	.small-mobile-only {
+	#refer .chair-photos img {
 		display:block;
+		width:90%;
+		margin:20px auto;
 	}
-
 }
