@@ -1,0 +1,66 @@
+/* responsive adjustments */
+
+ @media screen and (max-width:68em) {
+ 	.ew-logo {
+ 		width:100%;
+ 		padding:0;
+ 		height:125px;
+ 		margin-left:0;
+ 		margin-top:2em;
+ 	}
+ 	.description-wrap {
+		display:block;
+		width:100%; 		
+ 	}
+ 	#home .description, #refer .description, #refer .social-links {
+ 		width:250px;
+ 		text-align: left;
+ 	}
+ 	#home .form-wrap, #refer .referral-count, #refer .chair-photos {
+ 		float:none;
+ 		width:100%;
+ 		position:relative;
+ 		top:350px;
+ 		margin-bottom:50px;
+ 		margin-left:0;
+ 	}
+ 	#home .form-wrap {
+ 		top:350px;
+ 	}
+ 	#refer .referral-count, #refer .chair-photos {
+ 		top:400px;
+ 		margin-bottom:25px;
+ 	}
+ }
+
+.small-mobile-only {
+	display:none;
+}
+
+@media screen and (max-width:40em) {
+	.hero {
+		margin-top:180px;
+	}
+	.ew-logo {
+		position:relative;
+		top:-685px;
+	}
+	.description-wrap {
+		position:relative;
+		top:-150px;
+	}
+	#home .form-wrap {
+		top:200px;
+	}
+	#refer .referral-count {
+		top:250px;
+	}
+	#refer .chair-photos {
+		text-align: center;
+		top:150px;
+	}
+	.small-mobile-only {
+		display:block;
+	}
+
+}
