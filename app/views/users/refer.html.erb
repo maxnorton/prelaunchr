@@ -40,6 +40,10 @@
             <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>" class="fb" target="_blank"></a>
             <span class="sep"></span>
             <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+            <span class="sep"></span>
+            <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="28">
+                <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_28.png" />
+            </a></span>
         </span>
     </p>
 </main>
