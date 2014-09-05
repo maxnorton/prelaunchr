@@ -4,7 +4,7 @@
 	display:none;
 }
 
-.bg-alt-cover {
+.bg-cover-alt {
 	display:none;
 }
 
@@ -12,7 +12,7 @@
 
  @media screen and (max-width:68em) {
 
- 	.bg-alt-cover {
+ 	.bg-cover-alt {
  		display:block;
  		position:absolute;
  		top:0;
