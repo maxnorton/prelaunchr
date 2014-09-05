@@ -141,9 +141,9 @@ main {
 	text-align:center;
 }
 
-.avg-count {
-	font-size:.8em;
-	margin-top:1em;
+.referral-count hr {
+	width:290px;
+	margin:.5em auto;
 }
 
 #home .form-wrap .key{
@@ -445,13 +445,13 @@ main {
 }
 
 #refer .social-links{
-	width: 120px;
+	width: 181px;
 	height: 37px;
 	margin: 25px auto 0;
 	text-align: center;
 }
 
-#refer .social-links a, #refer .social-links div{
+#refer .social-links a, #refer .social-links div, #refer .social-links .pinterest {
 	display: inline-block;
 }
 
@@ -469,12 +469,36 @@ main {
 	height: 27px;
 }
 
+#refer .social-links .pinterest {
+	width:27px;
+	height:27px;
+	background:url(/assets/refer/pinit.png) no-repeat center center;
+	cursor:pointer;
+	position:relative;
+	top:-9px;
+	left:-5px;
+}
+
+#refer .social-links .pinterest a {
+	top:3px;
+	opacity:0;
+}
+
 #refer .social-links .sep{
 	height: 28px;
 	width: 1px;
 	background: #BAB9BA;
 	margin: 0 20px;
 	display:inline-block;
+}
+
+#refer .chair-photos {
+	width:96%;
+	margin:0px auto;
+}
+
+#refer .chair-photos img {
+	width:19%;
 }
 
 #refer .count {
@@ -777,11 +801,11 @@ only screen and (min-device-pixel-ratio: 2) {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -317px;
+    margin: 0 auto -350px;
  }
  
  main, .push {
-    height: 317px;
+    height: 350px;
  }
 
 
