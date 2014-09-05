@@ -492,6 +492,15 @@ main {
 	display:inline-block;
 }
 
+#refer .chair-photos {
+	width:96%;
+	margin:0px auto;
+}
+
+#refer .chair-photos img {
+	width:19%;
+}
+
 #refer .count {
 	font-size:3em;
 }
@@ -792,11 +801,11 @@ only screen and (min-device-pixel-ratio: 2) {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -317px;
+    margin: 0 auto -350px;
  }
  
  main, .push {
-    height: 317px;
+    height: 350px;
  }
 
 
