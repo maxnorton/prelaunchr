@@ -18,13 +18,6 @@
     <meta property="og:description" content='To mark their new father-son partnership, Robert and Tor Erickson will be giving away the chair that The Atlantic Monthly called "The highest nexus of art and ergonomics."'/>
     <meta property="og:image" content="<%= root_url %><%= asset_path("refer/tor-erickson-working.jpg") %>"/>
     <meta property="og:url" content="<%= root_url %>"/>
-    <% if @is_mobile %>
-      <% if @bodyId == 'home' %>
-        <meta name="viewport" content="width=1600" />
-      <% else %>
-        <meta name="viewport" content="width=1120" />
-      <% end %>
-    <% end %>
     <%= stylesheet_link_tag "core.css", :media => "all" %>
     <%= csrf_meta_tags %>
   </head>
