@@ -8,10 +8,10 @@
     <h1 class="adelle ew-logo">Erickson Woodworking</h1>
     <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
         <% if Rails.application.config.ended %>
-            <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-            <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-            <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
-            <p class="again brandon">Thank You Again!</p>
+            <p class="compiling">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+            <p class="compiling">WE ARE COMPILING RESULTS RIGHT NOW AND WILL<br/>ANNOUNCE A WINNER IN THE NEXT DAY OR TWO</p>
+            <p class="compiling">In the meantime, head to  <a href="http://www.harrys.com/">www.ericksonwoodworking.com</a></p>
+            <p class="again">Thank You Again!</p>
         <% else %>
             <p class="byline">Sign up to celebrate with us.</p>
             <%= form_for @user, :url => { :action => "create" } do |f| %>
