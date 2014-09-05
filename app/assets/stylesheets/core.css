@@ -371,7 +371,7 @@ main {
 }
 
 #refer .hero{
-	background: url(/assets/refer/robert-and-tor-erickson.jpg) center -200px no-repeat;
+	background: url(/assets/refer/robert-and-tor-erickson.jpg) center -100px no-repeat;
 	background-size:cover;
 	overflow: hidden;
 }
