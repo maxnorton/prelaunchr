@@ -90,10 +90,10 @@ main {
 .ew-logo {
 	float:left;
 	background-image:url(/assets/home/erickson-woodworking-logo.png);
-	background-size: 250px 82px;
+	background-size: 250px 125px;
 	background-position:center center;
 	width:250px;
-	height:115px;
+	height:125px;
 	margin:3em 2%;
 	padding:40px;
 	text-indent: -9999px;
