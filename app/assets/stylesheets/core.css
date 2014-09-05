@@ -141,9 +141,9 @@ main {
 	text-align:center;
 }
 
-.avg-count {
-	font-size:.8em;
-	margin-top:1em;
+.referral-count hr {
+	width:290px;
+	margin:.5em auto;
 }
 
 #home .form-wrap .key{
