@@ -165,8 +165,7 @@ main {
 	letter-spacing: 1px;
 }
 
-#home .form-wrap .last {
-	border-top:0 none;
+#home .form-wrap .last, #home .form-wrap .first {
 	border-bottom:0 none;
 }
 
