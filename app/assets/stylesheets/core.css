@@ -806,7 +806,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 /* responsive adjustments */
 
- @media (max-width:1050px) {
+ @media (max-width:1100px) {
  	.ew-logo {
  		width:100%;
  		padding:0;
