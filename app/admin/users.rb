@@ -2,8 +2,8 @@ ActiveAdmin.register User do
   actions :index, :show
 
   preserve_default_filters!
-  filter :referrer, collection: User.all.map{ |user| [user.email, user.id] }
-  filter :referrals, collection: User.all.map{ |user| [user.email, user.id] }
+  #filter :referrer, collection: User.all.map{ |user| [user.email, user.id] }
+  #filter :referrals, collection: User.all.map{ |user| [user.email, user.id] }
 
   index do 
   	column :id
