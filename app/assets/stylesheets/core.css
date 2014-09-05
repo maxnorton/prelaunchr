@@ -53,19 +53,9 @@ body{
 	min-height:500px;
 }
 
-#home .hero .triptych-1, #home .hero .triptych-2 {
-	height: 100%;
-	width:49.75%;
-	position:absolute;
-}
-
-#home .hero .triptych-1 {
-	background: url(/assets/home/robert-and-tor-erickson-discussing-table_1452px.jpg) no-repeat center bottom;
-}
-
-#home .hero .triptych-2 {
-	background: url(/assets/home/tor-erickson-hands-slats_1452px.jpg) no-repeat center bottom;
-	right:0;
+#home .hero {
+	background: url(/assets/home/chair.jpg) no-repeat center bottom;
+	background-size:cover;
 }
 
 #home .hero h2 {
@@ -73,17 +63,6 @@ body{
 	text-align:left;
 	font-size:1.8em;
 	color:white;
-}
-
-h2.line1 {
-	top:50px;
-	left:50px;
-}
-
-h2.line2 {
-	bottom:367px;
-	left:75%;
-	margin-left:-43px;
 }
 
 #home .hero .small{
@@ -111,20 +90,28 @@ main {
 .ew-logo {
 	float:left;
 	background-image:url(/assets/home/erickson-woodworking-logo.png);
-	background-size: 350px 115px;
+	background-size: 250px 82px;
 	background-position:center center;
-	width:350px;
+	width:250px;
 	height:115px;
 	margin:3em 2%;
+	padding:40px;
 	text-indent: -9999px;
+	background-repeat:no-repeat;
 }
 
 #home .description {
-	width:300px;
+	width:400px;
 	margin:0 auto;
-	padding:3em 0;
+	padding:1em 0;
 	text-align:center;
 	line-height:1.6em;
+}
+
+#home .desc-head {
+	font-size:1.2em;
+	font-weight:bold;
+	padding:1.8em 0 0;
 }
 
 .form-wrap, .referral-count {
@@ -135,6 +122,10 @@ main {
 	height: 80px;
 	width: 30%;
 	margin: 2em 2%;
+}
+
+#home .form-wrap {
+	padding-top:29px;
 }
 
 .referral-count {
@@ -165,13 +156,18 @@ main {
 	margin:0 auto;
 	text-align:center;
 }
-#home .form-wrap .email{
+#home .form-wrap .first, #home .form-wrap .last, #home .form-wrap .email{
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid black;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
+}
+
+#home .form-wrap .last {
+	border-top:0 none;
+	border-bottom:0 none;
 }
 
 #home .form-wrap .submit{

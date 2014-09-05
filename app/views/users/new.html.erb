@@ -1,8 +1,4 @@
 <div class="hero">
-    <div class="triptych-1"></div>
-    <div class="triptych-2"></div>
-    <h2 class="line1">Erickson Woodworking just went multi-generational.</h2>
-    <h2 class="line2">Take a seat.</h2>
     <!-- Sticky footer method by ryanfait.com -->
     <div class="push"></div>
 </div>
@@ -18,12 +14,13 @@
         <% else %>
             <p class="byline">Sign up to celebrate with us.</p>
             <%= form_for @user, :url => { :action => "create" } do |f| %>
-                <%= f.text_field :first_name, :placeholder => "first name", :class => "email brandon" %>
-                <%= f.text_field :last_name, :placeholder => "last name", :class => "email brandon" %>
+                <%= f.text_field :first_name, :placeholder => "first name", :class => "first" %>
+                <%= f.text_field :last_name, :placeholder => "last name", :class => "last" %>
                 <%= f.text_field :email, :placeholder => "your email", :class => "email brandon" %>
                 <%= f.submit "Step Inside" , :class=> "submit brandon" %>
             <% end %>
         <% end %>
     </div>
-    <p class="description">On September 15, to celebrate our new father-son partnership and the launch of our new website, Erickson Woodworking will be giving away a hand-made, bespoke chair.</p>
+    <p class="description desc-head">Erickson Woodworking just went multi-generational.</p>
+    <p class="description">On September 15, to celebrate our new father-son partnership, Erickson Woodworking will be giving away a hand-made, bespoke chair.</p>
 </main>
