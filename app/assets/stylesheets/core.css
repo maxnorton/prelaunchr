@@ -319,7 +319,7 @@ main {
 
 #refer .hero h2 {
 	position:absolute;
-	bottom:367px;
+	bottom:417px;
 	font-size:1.5em;
 	color:white;
 	width:100%;
@@ -796,6 +796,15 @@ only screen and (min-device-pixel-ratio: 2) {
  main, .push {
     height: 350px;
  }
+
+ #refer .hero {
+ 	margin-bottom:-400px;
+ }
+
+ #refer main, #refer .push {
+ 	height:400px;
+ }
+ 
 
 
 
