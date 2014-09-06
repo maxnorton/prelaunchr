@@ -46,7 +46,7 @@
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>" data-text="<%= twitter_message %>" data-size="large" data-count="none">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 <span class="sep"></span>
-                <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/?url=http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28">
+                <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28">
                     <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" />
                 </a></span>
             </span>
@@ -54,10 +54,10 @@
     </section>
 
     <div class="chair-photos">
-        <img src="/assets/refer/syuba.jpg" alt="South Yuba chair by Erickson Woodworking - front view @erickson_ww #chairsthatfit #customfurniture" />
-        <img src="/assets/refer/syubadetail1.jpg" alt="South Yuba chair by Erickson Woodworking - detail shot @erickson_ww #chairsthatfit #customfurniture" />
-        <img src="/assets/refer/syubaside.jpg" alt="South Yuba chair by Erickson Woodworking - side view @erickson_ww #chairsthatfit #customfurniture" />
-        <img src="/assets/refer/syubadetail2.jpg" alt="South Yuba chair by Erickson Woodworking - another detail shot @erickson_ww #chairsthatfit #customfurniture" />
-        <img src="/assets/refer/syubarocker.jpg" alt="South Yuba chair by Erickson Woodworking - rocker model @erickson_ww #chairsthatfit #customfurniture" />
+        <img src="/assets/refer/syuba.jpg" alt="South Yuba chair by Erickson Woodworking - front view @erickson_ww #chairsthatfit #customfurniture http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" />
+        <img src="/assets/refer/syubadetail1.jpg" alt="South Yuba chair by Erickson Woodworking - detail shot @erickson_ww #chairsthatfit #customfurniture http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" />
+        <img src="/assets/refer/syubaside.jpg" alt="South Yuba chair by Erickson Woodworking - side view @erickson_ww #chairsthatfit #customfurniture http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" />
+        <img src="/assets/refer/syubadetail2.jpg" alt="South Yuba chair by Erickson Woodworking - another detail shot @erickson_ww #chairsthatfit #customfurniture http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" />
+        <img src="/assets/refer/syubarocker.jpg" alt="South Yuba chair by Erickson Woodworking - rocker model @erickson_ww #chairsthatfit #customfurniture http://ericksonwoodworking.com/?ref=<%= @user.referral_code %>" />
     </div>
 </main>
