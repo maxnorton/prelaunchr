@@ -43,10 +43,11 @@
             <span class="social-links" style="display:block;">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>" class="fb" target="_blank"></a>
                 <span class="sep"></span>
-                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>" data-text="<%= CGI::escape(twitter_message) %>" data-size="large" data-count="none">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 <span class="sep"></span>
-                <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fpowerful-lake-3411.herokuapp.com%2F%3Fref%3D<%= @user.referral_code %>" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="28">
-                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_28.png" />
+                <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fpowerful-lake-3411.herokuapp.com%2F%3Fref%3D<%= @user.referral_code %>" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28">
+                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" />
                 </a></span>
             </span>
         </p>

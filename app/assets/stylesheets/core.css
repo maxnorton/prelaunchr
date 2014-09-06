@@ -447,7 +447,7 @@ main {
 }
 
 #refer .social-links{
-	width: 181px;
+	width: 300px;
 	height: 37px;
 	margin: 5px auto 0;
 	text-align: center;
@@ -458,32 +458,18 @@ main {
 }
 
 #refer .social-links .fb{
-	background: url(/assets/refer/fb.png);
-	background-size: 27px 27px;
-	width: 27px;
+	background: url(/assets/refer/fb-share.png) no-repeat center top;
+	width: 66px;
 	height: 27px;
 }
 
 #refer .social-links .twit{
-	background: url(/assets/refer/twit.png);
-	background-size: 27px 27px;
-	width: 27px;
-	height: 27px;
 }
 
 #refer .social-links .pinterest {
-	width:27px;
-	height:27px;
-	background:url(/assets/refer/pinit.png) no-repeat center center;
-	cursor:pointer;
-	position:relative;
-	top:-9px;
-	left:-5px;
 }
 
 #refer .social-links .pinterest a {
-	top:3px;
-	opacity:0;
 }
 
 #refer .social-links .sep{
