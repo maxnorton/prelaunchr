@@ -24,3 +24,4 @@ gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 gem 'delayed_job_active_record', '~> 4.0.1'
 
 gem 'unicorn', '~> 4.8.3'
+gem 'newrelic_rpm'
