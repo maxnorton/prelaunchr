@@ -75,8 +75,8 @@ Prelaunchr::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 465,
     :domain               => 'gmail.com',
-    :user_name            => 'info@ericksonwoodworking.com',
-    :password             => 'tonsofguns',
+    :user_name            => 'information@ericksonwoodworking.com',
+    :password             => 'businesslambshark',
     :authentication       => 'plain',
     :tls => true,
     :enable_starttls_auto => true  } 

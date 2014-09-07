@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "Erickson Woodworking <info@ericksonwoodworking.com>"
+  default from: "Erickson Woodworking <information@ericksonwoodworking.com>"
 
   def signup_email(user)
     @user = user
