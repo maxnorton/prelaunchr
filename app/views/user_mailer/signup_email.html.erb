@@ -1,20 +1,13 @@
-<img src="<%= root_url %>assets/email/thx.jpg" alt="Thank you from Erickson Woodworking" /><br /><br />
+<img src="<%= root_url %>assets/email/thx-short.jpg" alt="Thank you from Erickson Woodworking" /><br /><br />
 Dear <%= @user.first_name? ? @user.first_name.capitalize : "friend" %>,
 <br/><br/>
-Thank you for signing up at Erickson Woodworking and good luck! We&#8217;ll be announcing the winner of the chair giveaway on September 15, the same day our new website goes live.
+Thank you for signing up at Erickson Woodworking and good luck! 
 <br/><br/>
-Remember, the more referrals that you generate, the greater your chance of winning the custom chair. Keep checking back in at <%= link_to "Erickson Woodworking" , "#{@host}?ref=#{@user.referral_code}" %> to track your referrals versus everyone else.
+Don't forget to generate more chances to win by <a href="http://www.facebook.com/sharer/sharer.php?u=http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>">sharing on Facebook.</a>
 <br /><br />
-In the meantime, follow us on your favorite social media:
-<br/><br/>
-<center>
-<a href="https://www.facebook.com/pages/Erickson-Woodworking/110008722409104"><img src="<%= root_url %>assets/email/fb.png" width="27" height="27" alt="Facebook" /></a>&nbsp;&nbsp;
-<a href="https://twitter.com/ericksonww"><img src="<%= root_url %>assets/email/twit.png" width="27" height="23" alt="Twitter" /></a>&nbsp;&nbsp;
-<a href="http://www.pinterest.com/erickson_ww/"><img src="<%= root_url %>assets/email/pinit.png" width="27" height="27" alt="Pinterest" /></a>&nbsp;&nbsp;
-<a href="http://instagram.com/ericksonwoodworking"><img src="<%= root_url %>assets/email/insta.png" width="27" height="27" alt="Instagram" /></a>&nbsp;&nbsp;
-<a href="http://ericksonwoodworking.tumblr.com"><img src="<%= root_url %>assets/email/tumblr.png" width="27" height="27" alt="Tumblr" /></a>
-</center>
+<center><a href="http://www.facebook.com/sharer/sharer.php?u=http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>"><img src="<%= root_url %>assets/email/fb-share.png" width="66" height="25" alt="Share on Facebook" /></a></center>
 <br /><br />
+We&#8217;ll be announcing the winner of the chair giveaway on September 15, the same day our new website goes live.<br/><br/>
 Best regards,
 <br /><br />
 Robert and Tor Erickson
