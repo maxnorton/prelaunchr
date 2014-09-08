@@ -35,7 +35,7 @@ html.home{
 
 body{
 	font-family:Arial, Helvetica, sans-serif;
-	min-height:800px;
+	min-height:1045px;
 	position:relative;
 }
 
@@ -372,7 +372,7 @@ main {
 }
 
 #refer .hero{
-	background: url(/assets/refer/robert-and-tor-erickson.jpg) center -100px no-repeat;
+	background: url(/assets/refer/robert-and-tor-erickson.jpg) center -200px no-repeat;
 	background-size:cover;
 	overflow: hidden;
 }
