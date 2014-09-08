@@ -38,17 +38,9 @@
             <span style="display:block; margin-bottom:1em;" class="desc-left">Share your unique link via Facebook or email and be entered in the drawing again for every referral you generate.</span>
             <span class="social-links" style="display:block;">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>" class="fb" target="_blank"></a>
-                <!--span class="sep"></span>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ericksonwoodworking.com/?ref=<%= CGI::escape(@user.referral_code) %>" data-text="<%= twitter_message %>" data-size="large" data-count="none">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                <span class="sep"></span>
-                <span class="pinterest"><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28">
-                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" />
-                </a></span-->
             </span>
             <span style="display:block; font-size:.9em;">Or copy this link and share it by email:</span>
             <input class="copy-link" value="<%= root_url %>?ref=<%= @user.referral_code %>" type="text" />
-            <% twitter_message = "Soon I could be sitting in The Atlantic Monthly’s \"nexus of art and ergonomics\" thanks to @ericksonww:" %>
         </p>
     </section>
 
