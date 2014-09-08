@@ -65,21 +65,26 @@
 	#refer .hero h2 {
 		color:black !important;
 		position:relative;
-		top:275px;
+		top:255px;
 	}
 	.ew-logo {
 		position:relative;
-		top:-685px;
+	}
+	#home .ew-logo {
+		top:-920px;
+	}
+	#refer .ew-logo {
+		top:-885px;
 	}
 	#home .description-wrap {
 		width:100%;
 		float:none;
-		top:-450px;
+		top:-700px;
 	}
 	#refer .description-wrap {
 		width:100%;
 		margin:0 auto;
-		top:-350px;
+		top:-600px;
 	}
 	#refer .description, #refer .social-links {
 		text-align:center;
@@ -96,16 +101,15 @@
  	#home .form-wrap, #refer .referral-count, #refer .chair-photos {
  		float:none;
  		width:100%;
- 		top:350px;
  	}
 	#home .form-wrap {
-		top:-100px;
+		top:-350px;
 	}
 	#refer .referral-count {
-		top:80px;
+		top:-225px;
 	}
 	#refer .chair-photos {
-		top:0;
+		top:-350px;
 	}
 	#refer .chair-photos img {
 		display:block;
