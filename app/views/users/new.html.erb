@@ -20,6 +20,11 @@
                 <%= f.text_field :email, :placeholder => "your email", :class => "email brandon" %>
                 <%= f.submit "Step Inside" , :class=> "submit brandon" %>
             <% end %>
+             <p class="byline">Already signed up? Log in to track your referrals.</p>
+            <%= form_for @user, :url => { :action => "login" } do |f| %>
+                <%= f.text_field :email, :placeholder => "log in with your email", :class => "email brandon" %>
+                <%= f.submit "Log in" , :class=> "submit brandon" %>
+            <% end %>
         <% end %>
     </div>
     <section class="description-wrap">

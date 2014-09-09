@@ -90,6 +90,23 @@ class UsersController < ApplicationController
     redirect_to root_path, :status => 404
   end
 
+  def login
+    # See if user has really already signed up
+    @user = User.find_by_email(params[:user][:email])
+
+    # If yes, send them to referral page
+    if !@user.nil?
+      cookies[:h_email] = { :value => @user.email }
+      redirect_to '/refer-a-friend'
+    else
+      respond_to do |format|
+        cookies.delete :h_email
+        format.html { redirect_to root_path }
+        flash[:notice] = "Could not find a user with that email address. Please sign up to continue."
+      end
+    end
+  end
+
   private
 
   def skip_first_page

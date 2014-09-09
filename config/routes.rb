@@ -6,6 +6,7 @@ Prelaunchr::Application.routes.draw do
   root :to => "users#new"
 
   post 'users/create', to: 'users#create'
+  post 'users/login', to: 'users#login'
   get 'refer-a-friend', to: 'users#refer'
   get 'privacy-policy', to: 'users#policy'
 
