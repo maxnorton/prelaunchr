@@ -15,4 +15,14 @@ ActiveAdmin.register User do
   	column("Referral count") 	{ |user| user.referrals.count }
   	actions
   end
+
+  csv do 
+    column :id
+    column("Name")        { |user| user.first_name + " " + user.last_name }
+    column :email
+    column("Referrer", :referrer, :sortable => :referrer_id)
+    column :referral_code
+    column("Created at", :created_at, :sortable => :created_at)
+    column("Referral count")  { |user| user.referrals.count }
+  end
 end
