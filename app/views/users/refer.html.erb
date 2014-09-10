@@ -25,6 +25,7 @@
         }   
      %>
     <div class="referral-count">
+        <p style="font-size:.8em;">Logged in as <%= @user.email %>. <%= link_to "Not you?", controller: "users", action: "logout" %></p>
         <h3 class="count"><%= referrals_count %></h3>
         <p>Your total entries (you plus your referrals)</p>
         <hr />

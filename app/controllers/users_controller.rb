@@ -107,13 +107,27 @@ class UsersController < ApplicationController
     end
   end
 
+  def logout 
+    cookies.delete :h_email
+    redirect_to root_path
+  end
+
   private
 
   def skip_first_page
     if !Rails.application.config.ended
       email = cookies[:h_email]
-      if email and !User.find_by_email(email).nil?
+      step = params[:step]
+      id = params[:id]
+      # check url to see if it is a referral page permalink for a specific user
+      if step == 'refer' and id and !User.find_by_referral_code(id).nil?
+        cookies.delete :h_email # delete existing cookies in case url login method is overriding an existing login
+        cookies[:h_email] = User.find_by_referral_code(id).email
         redirect_to '/refer-a-friend'
+      # if not a direct login link, check if there is a user specificied in the browser's cookies
+      elsif email and !User.find_by_email(email).nil?
+        redirect_to '/refer-a-friend'
+      # if neither, delete cookies to start with a fresh slate
       else
         cookies.delete :h_email
       end
