@@ -20,6 +20,11 @@ ActiveAdmin.register User do
     column :id
     column("Name")        { |user| user.first_name + " " + user.last_name }
     column :email
+    column("Referrer") { |user| 
+      if !user.referrer.nil?
+        user.referrer[:email]
+      end
+    }
     column :referral_code
     column("Created at")  { |user| user.created_at }
     column("Referral count")  { |user| user.referrals.count }
