@@ -12,32 +12,32 @@ class UsersController < ApplicationController
     end
   end
 
-    def create
-        # Get user to see if they have already signed up
+  def create
+    # Get user to see if they have already signed up
 
-        @user = User.find_by_email(params[:user][:email])
+    @user = User.find_by_email(params[:user][:email])
 
-        # If user doesnt exist, make them, and attach referrer
-        if @user.nil?
+    # If user doesnt exist, make them, and attach referrer
+    if @user.nil?
 
-            cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
+      cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
 
-            if !cur_ip
-                cur_ip = IpAddress.create(
-                    :address => request.env['HTTP_X_FORWARDED_FOR'],
-                    :count => 0
-                )
-            end
+      if !cur_ip
+        cur_ip = IpAddress.create(
+          :address => request.env['HTTP_X_FORWARDED_FOR'],
+          :count => 0
+        )
+      end
 
-            if cur_ip.count > 2
-              flash[:notice] = "Sorry not allowed!"
-              return redirect_to root_path
-            else
-              cur_ip.count = cur_ip.count + 1
-              cur_ip.save
-            end
+      if cur_ip.count > 2
+        flash[:notice] = "Sorry not allowed!"
+        return redirect_to root_path
+      else
+        cur_ip.count = cur_ip.count + 1
+        cur_ip.save
+      end
 
-            @user = User.new(:first_name => params[:user][:first_name], :last_name => params[:user][:last_name], :email => params[:user][:email])
+      @user = User.new(:first_name => params[:user][:first_name], :last_name => params[:user][:last_name], :email => params[:user][:email])
 
       @referred_by = User.find_by_referral_code(cookies[:h_ref])
 
@@ -103,6 +103,35 @@ class UsersController < ApplicationController
         cookies.delete :h_email
         format.html { redirect_to root_path }
         flash[:notice] = "Could not find a user with that email address. Please sign up to continue."
+      end
+    end
+  end
+
+
+
+
+
+
+  #Created Date:- 12 September, 2014
+  #Purpose:- To sign out a signed in user.
+  def log_out
+    cookies[:h_email] = { :value => nil }
+    respond_to do |format|
+      format.html { redirect_to root_path, :alert => "Logged out successfully." }
+    end
+  end
+
+  #Created Date:- 12 September, 2014
+  #Purpose:- To allow user's referral page to be accessed directly through a custom URL.
+  def visit
+    @user = User.find_by_referral_code(params[:referral_code])
+    @bodyId = 'refer'
+    @is_mobile = mobile_device?
+    respond_to do |format|
+      if !@user.nil?
+        format.html #visit.html.erb kept as seperate so that additional features can be added in future.
+      else
+        format.html { redirect_to root_path, :alert => "Something went wrong!" }
       end
     end
   end
